@@ -5,25 +5,26 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Schedule-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Crowd_Monitor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ScheduleViewController" customModule="Crowd_Monitor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scheduler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4e-PL-tzY">
-                                <rect key="frame" x="30" y="94" width="159" height="43.5"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <rect key="frame" x="30" y="94" width="119" height="33"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                 <color key="textColor" red="0.97647058819999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QFv-RG-Brv">
-                                <rect key="frame" x="30" y="167.5" width="354" height="200"/>
+                                <rect key="frame" x="30" y="157" width="354" height="200"/>
                                 <color key="backgroundColor" name="darkGreen"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="crZ-uG-QWC"/>
@@ -35,13 +36,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qc-vX-4G8">
-                                <rect key="frame" x="30" y="417.5" width="91.5" height="43.5"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <rect key="frame" x="30" y="407" width="68.5" height="33"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                 <color key="textColor" red="0.97647058819999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHw-mu-rdM">
-                                <rect key="frame" x="30" y="491" width="354" height="200"/>
+                                <rect key="frame" x="30" y="470" width="354" height="200"/>
                                 <color key="backgroundColor" name="darkGreen"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="M7I-HD-Ydo"/>
@@ -78,7 +79,7 @@
         <!--Log-->
         <scene sceneID="7NX-We-6tr">
             <objects>
-                <viewController id="KVd-iV-IL1" sceneMemberID="viewController">
+                <viewController id="KVd-iV-IL1" customClass="LogViewController" customModule="Crowd_Monitor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fkO-TW-DMI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,20 +92,106 @@
                                     <segment title="Yesterday"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" name="lightGreen"/>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="KVd-iV-IL1" eventType="valueChanged" id="CmK-h5-xju"/>
+                                </connections>
                             </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aay-zr-DOP">
+                                <rect key="frame" x="30" y="175" width="354" height="250"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVA-LS-Dqp" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="10" y="10" width="334" height="230"/>
+                                        <color key="backgroundColor" name="lightGreen"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="lightGreen"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="EVA-LS-Dqp" secondAttribute="trailing" constant="10" id="3tx-Fp-Nig"/>
+                                    <constraint firstAttribute="height" constant="250" id="JSX-c7-oC5"/>
+                                    <constraint firstAttribute="bottom" secondItem="EVA-LS-Dqp" secondAttribute="bottom" constant="10" id="Wek-AF-ETs"/>
+                                    <constraint firstItem="EVA-LS-Dqp" firstAttribute="top" secondItem="Aay-zr-DOP" secondAttribute="top" constant="10" id="mdH-fp-2Kk"/>
+                                    <constraint firstItem="EVA-LS-Dqp" firstAttribute="leading" secondItem="Aay-zr-DOP" secondAttribute="leading" constant="10" id="oeD-2b-DLU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBF-ZC-82n">
+                                <rect key="frame" x="30" y="455" width="354" height="250"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NPc-OO-PEr" customClass="BarChartView" customModule="Charts">
+                                        <rect key="frame" x="10" y="10" width="334" height="230"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="lightGreen"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NPc-OO-PEr" secondAttribute="trailing" constant="10" id="AwS-fp-ejF"/>
+                                    <constraint firstItem="NPc-OO-PEr" firstAttribute="leading" secondItem="zBF-ZC-82n" secondAttribute="leading" constant="10" id="Y75-39-x8K"/>
+                                    <constraint firstAttribute="bottom" secondItem="NPc-OO-PEr" secondAttribute="bottom" constant="10" id="c6a-GX-FPm"/>
+                                    <constraint firstAttribute="height" constant="250" id="fKx-bV-c2W"/>
+                                    <constraint firstItem="NPc-OO-PEr" firstAttribute="top" secondItem="zBF-ZC-82n" secondAttribute="top" constant="10" id="luV-nr-cuk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xhv-w3-Thx">
+                                <rect key="frame" x="132" y="735" width="150" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTC-wq-4p5">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="View Data &gt;">
+                                            <color key="titleColor" red="0.97647058819999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="darkGreen"/>
+                                <constraints>
+                                    <constraint firstItem="LTC-wq-4p5" firstAttribute="leading" secondItem="Xhv-w3-Thx" secondAttribute="leading" id="BbJ-pr-ICG"/>
+                                    <constraint firstAttribute="bottom" secondItem="LTC-wq-4p5" secondAttribute="bottom" id="H3L-xw-QhU"/>
+                                    <constraint firstAttribute="width" constant="150" id="NWS-jH-vBT"/>
+                                    <constraint firstAttribute="height" constant="40" id="RbD-kI-ImW"/>
+                                    <constraint firstAttribute="trailing" secondItem="LTC-wq-4p5" secondAttribute="trailing" id="Z3F-RH-aAp"/>
+                                    <constraint firstItem="LTC-wq-4p5" firstAttribute="top" secondItem="Xhv-w3-Thx" secondAttribute="top" id="cnS-pW-BOy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g9J-mb-a8O"/>
                         <color key="backgroundColor" name="appBlack"/>
                         <constraints>
+                            <constraint firstItem="Xhv-w3-Thx" firstAttribute="top" secondItem="zBF-ZC-82n" secondAttribute="bottom" constant="30" id="4Zn-Xo-S4Y"/>
+                            <constraint firstItem="zBF-ZC-82n" firstAttribute="leading" secondItem="g9J-mb-a8O" secondAttribute="leading" constant="30" id="8gJ-tO-Kux"/>
+                            <constraint firstItem="Aay-zr-DOP" firstAttribute="top" secondItem="1FC-TS-peD" secondAttribute="bottom" constant="50" id="AC2-mR-VqJ"/>
+                            <constraint firstItem="Xhv-w3-Thx" firstAttribute="centerX" secondItem="fkO-TW-DMI" secondAttribute="centerX" id="BJV-k0-WlK"/>
+                            <constraint firstItem="Aay-zr-DOP" firstAttribute="leading" secondItem="g9J-mb-a8O" secondAttribute="leading" constant="30" id="Fqr-JH-Yq5"/>
+                            <constraint firstItem="zBF-ZC-82n" firstAttribute="top" secondItem="Aay-zr-DOP" secondAttribute="bottom" constant="30" id="I1l-g1-Vbg"/>
                             <constraint firstItem="1FC-TS-peD" firstAttribute="centerX" secondItem="fkO-TW-DMI" secondAttribute="centerX" id="Q18-Ca-Zs6"/>
+                            <constraint firstItem="g9J-mb-a8O" firstAttribute="trailing" secondItem="Aay-zr-DOP" secondAttribute="trailing" constant="30" id="izv-bM-Ofj"/>
+                            <constraint firstItem="g9J-mb-a8O" firstAttribute="trailing" secondItem="zBF-ZC-82n" secondAttribute="trailing" constant="30" id="ru9-rG-djd"/>
                             <constraint firstItem="1FC-TS-peD" firstAttribute="top" secondItem="g9J-mb-a8O" secondAttribute="top" constant="50" id="vhM-6u-G9Z"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Log" image="chart.bar.fill" catalog="system" id="Oot-od-Ff7"/>
+                    <connections>
+                        <outlet property="barChartView" destination="NPc-OO-PEr" id="YPV-hp-WSk"/>
+                        <outlet property="pieChartView" destination="EVA-LS-Dqp" id="bDZ-eB-7rb"/>
+                        <outlet property="segmentedControl" destination="1FC-TS-peD" id="SC9-Fz-Kn3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahn-85-1xu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="935" y="781"/>
+            <point key="canvasLocation" x="934.78260869565224" y="780.80357142857144"/>
         </scene>
         <!--Home-->
         <scene sceneID="oHP-lA-ova">
@@ -191,13 +278,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0dx-21-lWz">
-                                <rect key="frame" x="0.0" y="445" width="414" height="368"/>
+                                <rect key="frame" x="0.0" y="450.5" width="414" height="362.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alerts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ge-kP-uty">
-                                <rect key="frame" x="30" y="407.5" width="64.5" height="27.5"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alerts" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ge-kP-uty">
+                                <rect key="frame" x="30" y="407.5" width="77" height="33"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                 <color key="textColor" red="0.97647058819999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -235,6 +322,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="WnG-Em-eAa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="HTa-Cj-mJK">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" name="darkGreen"/>
                         <color key="barTintColor" name="appBlack"/>
@@ -256,13 +344,16 @@
         <image name="clock.fill" catalog="system" width="128" height="121"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <namedColor name="appBlack">
-            <color red="0.10980392156862745" green="0.078431372549019607" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.10999999940395355" green="0.078000001609325409" blue="0.15299999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="darkGreen">
-            <color red="0.49411764705882355" green="0.792156862745098" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.49399998784065247" green="0.79199999570846558" blue="0.6119999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="lightGreen">
-            <color red="0.80000000000000004" green="1" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.80000001192092896" green="1" blue="0.74099999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

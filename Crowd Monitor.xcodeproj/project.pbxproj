@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FBA7A02C5ACEB9B3A71570C /* Pods_Crowd_Monitor_Crowd_MonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9576A3A6D048317DF5CE06 /* Pods_Crowd_Monitor_Crowd_MonitorUITests.framework */; };
 		709C4E79260503AB005B78D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4E78260503AB005B78D4 /* AppDelegate.swift */; };
 		709C4E7B260503AB005B78D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4E7A260503AB005B78D4 /* SceneDelegate.swift */; };
 		709C4E7D260503AB005B78D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4E7C260503AB005B78D4 /* ViewController.swift */; };
@@ -18,6 +19,10 @@
 		709C4EAD26050ACF005B78D4 /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4EAB26050ACF005B78D4 /* AlertTableViewCell.swift */; };
 		709C4EAE26050ACF005B78D4 /* AlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709C4EAC26050ACF005B78D4 /* AlertTableViewCell.xib */; };
 		709C4EB326050CA2005B78D4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4EB226050CA2005B78D4 /* HomeViewController.swift */; };
+		709C4EBB26051DFA005B78D4 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4EBA26051DFA005B78D4 /* ScheduleViewController.swift */; };
+		709C4ECA260521C7005B78D4 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4EC9260521C7005B78D4 /* LogViewController.swift */; };
+		96DA8E11DA51C3223BD45020 /* Pods_Crowd_Monitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97209E56536A5A51D20B0F5 /* Pods_Crowd_Monitor.framework */; };
+		ABD85212EABE6690F2065028 /* Pods_Crowd_MonitorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCF83906F80C86ABCCCBF52 /* Pods_Crowd_MonitorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C653A510536E19534C8AC84 /* Pods-Crowd Monitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crowd Monitor.debug.xcconfig"; path = "Target Support Files/Pods-Crowd Monitor/Pods-Crowd Monitor.debug.xcconfig"; sourceTree = "<group>"; };
 		709C4E75260503AB005B78D4 /* Crowd Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crowd Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		709C4E78260503AB005B78D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		709C4E7A260503AB005B78D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +61,16 @@
 		709C4EAB26050ACF005B78D4 /* AlertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTableViewCell.swift; sourceTree = "<group>"; };
 		709C4EAC26050ACF005B78D4 /* AlertTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertTableViewCell.xib; sourceTree = "<group>"; };
 		709C4EB226050CA2005B78D4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		709C4EBA26051DFA005B78D4 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		709C4EC9260521C7005B78D4 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		7A9576A3A6D048317DF5CE06 /* Pods_Crowd_Monitor_Crowd_MonitorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crowd_Monitor_Crowd_MonitorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4570FF2728E1F87CBB29B1 /* Pods-Crowd Monitor-Crowd MonitorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crowd Monitor-Crowd MonitorUITests.release.xcconfig"; path = "Target Support Files/Pods-Crowd Monitor-Crowd MonitorUITests/Pods-Crowd Monitor-Crowd MonitorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8BCF83906F80C86ABCCCBF52 /* Pods_Crowd_MonitorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crowd_MonitorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE7AAF8917E949FFFEAE505 /* Pods-Crowd MonitorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crowd MonitorTests.debug.xcconfig"; path = "Target Support Files/Pods-Crowd MonitorTests/Pods-Crowd MonitorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9872DB523342604A76C68D1 /* Pods-Crowd Monitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crowd Monitor.release.xcconfig"; path = "Target Support Files/Pods-Crowd Monitor/Pods-Crowd Monitor.release.xcconfig"; sourceTree = "<group>"; };
+		CF291D8D48FADA2B21413396 /* Pods-Crowd MonitorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crowd MonitorTests.release.xcconfig"; path = "Target Support Files/Pods-Crowd MonitorTests/Pods-Crowd MonitorTests.release.xcconfig"; sourceTree = "<group>"; };
+		D97209E56536A5A51D20B0F5 /* Pods_Crowd_Monitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crowd_Monitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B10705B7E88F4EA4C3E8FE /* Pods-Crowd Monitor-Crowd MonitorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crowd Monitor-Crowd MonitorUITests.debug.xcconfig"; path = "Target Support Files/Pods-Crowd Monitor-Crowd MonitorUITests/Pods-Crowd Monitor-Crowd MonitorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96DA8E11DA51C3223BD45020 /* Pods_Crowd_Monitor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABD85212EABE6690F2065028 /* Pods_Crowd_MonitorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +94,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FBA7A02C5ACEB9B3A71570C /* Pods_Crowd_Monitor_Crowd_MonitorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0491188C34FE58E6D03C1542 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C653A510536E19534C8AC84 /* Pods-Crowd Monitor.debug.xcconfig */,
+				B9872DB523342604A76C68D1 /* Pods-Crowd Monitor.release.xcconfig */,
+				E6B10705B7E88F4EA4C3E8FE /* Pods-Crowd Monitor-Crowd MonitorUITests.debug.xcconfig */,
+				8B4570FF2728E1F87CBB29B1 /* Pods-Crowd Monitor-Crowd MonitorUITests.release.xcconfig */,
+				ACE7AAF8917E949FFFEAE505 /* Pods-Crowd MonitorTests.debug.xcconfig */,
+				CF291D8D48FADA2B21413396 /* Pods-Crowd MonitorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		709C4E6C260503AB005B78D4 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +121,8 @@
 				709C4E8E260503B2005B78D4 /* Crowd MonitorTests */,
 				709C4E99260503B2005B78D4 /* Crowd MonitorUITests */,
 				709C4E76260503AB005B78D4 /* Products */,
+				0491188C34FE58E6D03C1542 /* Pods */,
+				C72CF166669A7CF0CCE3CD54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +149,8 @@
 				709C4EAB26050ACF005B78D4 /* AlertTableViewCell.swift */,
 				709C4EAC26050ACF005B78D4 /* AlertTableViewCell.xib */,
 				709C4EB226050CA2005B78D4 /* HomeViewController.swift */,
+				709C4EBA26051DFA005B78D4 /* ScheduleViewController.swift */,
+				709C4EC9260521C7005B78D4 /* LogViewController.swift */,
 			);
 			path = "Crowd Monitor";
 			sourceTree = "<group>";
@@ -137,6 +173,16 @@
 			path = "Crowd MonitorUITests";
 			sourceTree = "<group>";
 		};
+		C72CF166669A7CF0CCE3CD54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D97209E56536A5A51D20B0F5 /* Pods_Crowd_Monitor.framework */,
+				7A9576A3A6D048317DF5CE06 /* Pods_Crowd_Monitor_Crowd_MonitorUITests.framework */,
+				8BCF83906F80C86ABCCCBF52 /* Pods_Crowd_MonitorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 709C4E9F260503B2005B78D4 /* Build configuration list for PBXNativeTarget "Crowd Monitor" */;
 			buildPhases = (
+				915D28E82B04F2400C1AF217 /* [CP] Check Pods Manifest.lock */,
 				709C4E71260503AB005B78D4 /* Sources */,
 				709C4E72260503AB005B78D4 /* Frameworks */,
 				709C4E73260503AB005B78D4 /* Resources */,
+				29ED26BF29F1E9047C9E8FE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 709C4EA2260503B2005B78D4 /* Build configuration list for PBXNativeTarget "Crowd MonitorTests" */;
 			buildPhases = (
+				E233DCE90EB764A454420B2F /* [CP] Check Pods Manifest.lock */,
 				709C4E87260503B2005B78D4 /* Sources */,
 				709C4E88260503B2005B78D4 /* Frameworks */,
 				709C4E89260503B2005B78D4 /* Resources */,
@@ -179,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 709C4EA5260503B2005B78D4 /* Build configuration list for PBXNativeTarget "Crowd MonitorUITests" */;
 			buildPhases = (
+				0F0471DCDB9A9D61A879A73C /* [CP] Check Pods Manifest.lock */,
 				709C4E92260503B2005B78D4 /* Sources */,
 				709C4E93260503B2005B78D4 /* Frameworks */,
 				709C4E94260503B2005B78D4 /* Resources */,
+				99DFAE6441B5FCCF3EF0482B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +314,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F0471DCDB9A9D61A879A73C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crowd Monitor-Crowd MonitorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29ED26BF29F1E9047C9E8FE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crowd Monitor/Pods-Crowd Monitor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crowd Monitor/Pods-Crowd Monitor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Crowd Monitor/Pods-Crowd Monitor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		915D28E82B04F2400C1AF217 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crowd Monitor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99DFAE6441B5FCCF3EF0482B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crowd Monitor-Crowd MonitorUITests/Pods-Crowd Monitor-Crowd MonitorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crowd Monitor-Crowd MonitorUITests/Pods-Crowd Monitor-Crowd MonitorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Crowd Monitor-Crowd MonitorUITests/Pods-Crowd Monitor-Crowd MonitorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E233DCE90EB764A454420B2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crowd MonitorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		709C4E71260503AB005B78D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -271,7 +425,9 @@
 				709C4EB326050CA2005B78D4 /* HomeViewController.swift in Sources */,
 				709C4E7D260503AB005B78D4 /* ViewController.swift in Sources */,
 				709C4E79260503AB005B78D4 /* AppDelegate.swift in Sources */,
+				709C4EBB26051DFA005B78D4 /* ScheduleViewController.swift in Sources */,
 				709C4EAD26050ACF005B78D4 /* AlertTableViewCell.swift in Sources */,
+				709C4ECA260521C7005B78D4 /* LogViewController.swift in Sources */,
 				709C4E7B260503AB005B78D4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +601,7 @@
 		};
 		709C4EA0260503B2005B78D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C653A510536E19534C8AC84 /* Pods-Crowd Monitor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -464,6 +621,7 @@
 		};
 		709C4EA1260503B2005B78D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9872DB523342604A76C68D1 /* Pods-Crowd Monitor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -483,6 +641,7 @@
 		};
 		709C4EA3260503B2005B78D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACE7AAF8917E949FFFEAE505 /* Pods-Crowd MonitorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +664,7 @@
 		};
 		709C4EA4260503B2005B78D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF291D8D48FADA2B21413396 /* Pods-Crowd MonitorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -527,6 +687,7 @@
 		};
 		709C4EA6260503B2005B78D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6B10705B7E88F4EA4C3E8FE /* Pods-Crowd Monitor-Crowd MonitorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -547,6 +708,7 @@
 		};
 		709C4EA7260503B2005B78D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B4570FF2728E1F87CBB29B1 /* Pods-Crowd Monitor-Crowd MonitorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
