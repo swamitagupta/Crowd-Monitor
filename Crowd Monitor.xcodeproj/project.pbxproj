@@ -21,6 +21,9 @@
 		709C4EB326050CA2005B78D4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4EB226050CA2005B78D4 /* HomeViewController.swift */; };
 		709C4EBB26051DFA005B78D4 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4EBA26051DFA005B78D4 /* ScheduleViewController.swift */; };
 		709C4ECA260521C7005B78D4 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4EC9260521C7005B78D4 /* LogViewController.swift */; };
+		709C4ED026052DD7005B78D4 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4ECE26052DD7005B78D4 /* DataTableViewCell.swift */; };
+		709C4ED126052DD7005B78D4 /* DataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709C4ECF26052DD7005B78D4 /* DataTableViewCell.xib */; };
+		709C4ED62605301A005B78D4 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4ED52605301A005B78D4 /* DataViewController.swift */; };
 		96DA8E11DA51C3223BD45020 /* Pods_Crowd_Monitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97209E56536A5A51D20B0F5 /* Pods_Crowd_Monitor.framework */; };
 		ABD85212EABE6690F2065028 /* Pods_Crowd_MonitorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCF83906F80C86ABCCCBF52 /* Pods_Crowd_MonitorTests.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +66,9 @@
 		709C4EB226050CA2005B78D4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		709C4EBA26051DFA005B78D4 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		709C4EC9260521C7005B78D4 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		709C4ECE26052DD7005B78D4 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		709C4ECF26052DD7005B78D4 /* DataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataTableViewCell.xib; sourceTree = "<group>"; };
+		709C4ED52605301A005B78D4 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		7A9576A3A6D048317DF5CE06 /* Pods_Crowd_Monitor_Crowd_MonitorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crowd_Monitor_Crowd_MonitorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B4570FF2728E1F87CBB29B1 /* Pods-Crowd Monitor-Crowd MonitorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crowd Monitor-Crowd MonitorUITests.release.xcconfig"; path = "Target Support Files/Pods-Crowd Monitor-Crowd MonitorUITests/Pods-Crowd Monitor-Crowd MonitorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8BCF83906F80C86ABCCCBF52 /* Pods_Crowd_MonitorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crowd_MonitorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +157,9 @@
 				709C4EB226050CA2005B78D4 /* HomeViewController.swift */,
 				709C4EBA26051DFA005B78D4 /* ScheduleViewController.swift */,
 				709C4EC9260521C7005B78D4 /* LogViewController.swift */,
+				709C4ECE26052DD7005B78D4 /* DataTableViewCell.swift */,
+				709C4ECF26052DD7005B78D4 /* DataTableViewCell.xib */,
+				709C4ED52605301A005B78D4 /* DataViewController.swift */,
 			);
 			path = "Crowd Monitor";
 			sourceTree = "<group>";
@@ -291,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				709C4ED126052DD7005B78D4 /* DataTableViewCell.xib in Resources */,
 				709C4E85260503B1005B78D4 /* LaunchScreen.storyboard in Resources */,
 				709C4E82260503B1005B78D4 /* Assets.xcassets in Resources */,
 				709C4EAE26050ACF005B78D4 /* AlertTableViewCell.xib in Resources */,
@@ -423,12 +433,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				709C4EB326050CA2005B78D4 /* HomeViewController.swift in Sources */,
+				709C4ED62605301A005B78D4 /* DataViewController.swift in Sources */,
 				709C4E7D260503AB005B78D4 /* ViewController.swift in Sources */,
 				709C4E79260503AB005B78D4 /* AppDelegate.swift in Sources */,
 				709C4EBB26051DFA005B78D4 /* ScheduleViewController.swift in Sources */,
 				709C4EAD26050ACF005B78D4 /* AlertTableViewCell.swift in Sources */,
 				709C4ECA260521C7005B78D4 /* LogViewController.swift in Sources */,
 				709C4E7B260503AB005B78D4 /* SceneDelegate.swift in Sources */,
+				709C4ED026052DD7005B78D4 /* DataTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
