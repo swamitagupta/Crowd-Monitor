@@ -20,10 +20,14 @@ class AuthViewController: UIViewController {
         messageLabel.alpha = 0
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.isHidden = true
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = false
         textField.text = ""
         nameTextField.text = ""
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
     }
 
     @IBAction func segmentChanged(_ sender: Any) {
