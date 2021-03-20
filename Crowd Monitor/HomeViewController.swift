@@ -10,7 +10,6 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var thresholdTextField: UITextField!
     
     let alerts = [["Alert!", "The count has reached the threshold value of 50.", "7:30 pm"], ["Warning", "90% of threshold value reached.","7:25 pm"], ["Warning", "90% of threshold value reached.","3:10 pm"]]

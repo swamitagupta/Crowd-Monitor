@@ -78,4 +78,10 @@ class LogViewController: UIViewController {
         let chartData = BarChartData(dataSet: chartDataSet)
         barChartView.data = chartData
     }
+    
+    @IBAction func logOutPressed(_ sender: Any) {
+        print("Hiii")
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
 }
