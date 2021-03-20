@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FBA7A02C5ACEB9B3A71570C /* Pods_Crowd_Monitor_Crowd_MonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9576A3A6D048317DF5CE06 /* Pods_Crowd_Monitor_Crowd_MonitorUITests.framework */; };
+		7076453B2605C6190000B52A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7076453A2605C6190000B52A /* TabBarViewController.swift */; };
 		709C4E79260503AB005B78D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4E78260503AB005B78D4 /* AppDelegate.swift */; };
 		709C4E7B260503AB005B78D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4E7A260503AB005B78D4 /* SceneDelegate.swift */; };
 		709C4E7D260503AB005B78D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4E7C260503AB005B78D4 /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		1C653A510536E19534C8AC84 /* Pods-Crowd Monitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crowd Monitor.debug.xcconfig"; path = "Target Support Files/Pods-Crowd Monitor/Pods-Crowd Monitor.debug.xcconfig"; sourceTree = "<group>"; };
+		7076453A2605C6190000B52A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		709C4E75260503AB005B78D4 /* Crowd Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crowd Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		709C4E78260503AB005B78D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		709C4E7A260503AB005B78D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				709C4E78260503AB005B78D4 /* AppDelegate.swift */,
+				7076453A2605C6190000B52A /* TabBarViewController.swift */,
 				709C4E7A260503AB005B78D4 /* SceneDelegate.swift */,
 				709C4E7C260503AB005B78D4 /* ViewController.swift */,
 				709C4E7E260503AB005B78D4 /* Main.storyboard */,
@@ -440,6 +443,7 @@
 				709C4EAD26050ACF005B78D4 /* AlertTableViewCell.swift in Sources */,
 				709C4ECA260521C7005B78D4 /* LogViewController.swift in Sources */,
 				709C4E7B260503AB005B78D4 /* SceneDelegate.swift in Sources */,
+				7076453B2605C6190000B52A /* TabBarViewController.swift in Sources */,
 				709C4ED026052DD7005B78D4 /* DataTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
