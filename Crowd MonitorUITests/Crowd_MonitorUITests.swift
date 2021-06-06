@@ -8,35 +8,96 @@
 import XCTest
 
 class Crowd_MonitorUITests: XCTestCase {
+    
+    let validAdminUsername = "Yash"
+    let validAdminCode = "abc123"
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    }
+    
+    func isSignedIn(app: XCUIApplication) {
+        app.launch()
+        app/*@START_MENU_TOKEN@*/.staticTexts["Sign In"]/*[[".buttons[\"Sign In\"].staticTexts[\"Sign In\"]",".staticTexts[\"Sign In\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        let enterAdminUsername = app.textFields["Enter Username"]
+        XCTAssertTrue(enterAdminUsername.exists)
+        enterAdminUsername.tap()
+        enterAdminUsername.typeText(validAdminUsername)
+        
+        let enterAdminCodeTextField = app.textFields["Enter Admin Code"]
+        XCTAssertTrue(enterAdminCodeTextField.exists)
+        enterAdminCodeTextField.tap()
+        enterAdminCodeTextField.typeText(validAdminCode)
+        
+        let element = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
+        element.tap()
+        app.staticTexts["Crowd Monitor"].tap()
+
+        app.buttons["Submit"].tap()
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func testSignIn() throws {
         let app = XCUIApplication()
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let si = app/*@START_MENU_TOKEN@*/.staticTexts["Sign In"]/*[[".buttons[\"Sign In\"].staticTexts[\"Sign In\"]",".staticTexts[\"Sign In\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        XCTAssertTrue(si.exists)
     }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+    
+    
+    func testShowData() {
+        
+        let app = XCUIApplication()
+        isSignedIn(app: app)
+        app.tabBars["Tab Bar"].buttons["Log"].tap()
+        app/*@START_MENU_TOKEN@*/.staticTexts["View Data >"]/*[[".buttons[\"View Data >\"].staticTexts[\"View Data >\"]",".staticTexts[\"View Data >\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        let countView = app.staticTexts["Count Data"]
+        XCTAssertTrue(countView.exists)
+        
     }
+    
+    func testScheduleTab() {
+        
+        let app = XCUIApplication()
+        isSignedIn(app: app)
+        
+        let scheduleTab = app.tabBars["Tab Bar"].buttons["Schedule"]
+        XCTAssertTrue(scheduleTab.exists)
+    }
+    
+    func testVisualization() {
+        
+        let app = XCUIApplication()
+        isSignedIn(app: app)
+        app.tabBars["Tab Bar"].buttons["Log"].tap()
+        app/*@START_MENU_TOKEN@*/.buttons["Yesterday"]/*[[".segmentedControls.buttons[\"Yesterday\"]",".buttons[\"Yesterday\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        let chartView = app/*@START_MENU_TOKEN@*/.staticTexts["View Data >"]/*[[".buttons[\"View Data >\"].staticTexts[\"View Data >\"]",".staticTexts[\"View Data >\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        XCTAssertTrue(chartView.exists)
+                      
+    }
+    
+    func testLogOutSuccess() {
+        
+        let app = XCUIApplication()
+        isSignedIn(app: app)
+        let tabBar = app.tabBars["Tab Bar"]
+        
+        tabBar.buttons["Log"].tap()
+        app/*@START_MENU_TOKEN@*/.staticTexts[" Log Out"]/*[[".buttons[\" Log Out\"].staticTexts[\" Log Out\"]",".staticTexts[\" Log Out\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        let appInitText = app.staticTexts["Crowd Monitor"]
+        XCTAssertTrue(appInitText.exists)
+    }
+    
+    func testValidLoginSuccess() {
+        
+        let app = XCUIApplication()
+        isSignedIn(app: app)
+        let appInitText = app.staticTexts["Crowd Monitor"]
+        XCTAssertTrue(appInitText.exists)
+    }
+    
 }

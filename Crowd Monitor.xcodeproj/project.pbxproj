@@ -28,6 +28,42 @@
 		709C4ED026052DD7005B78D4 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4ECE26052DD7005B78D4 /* DataTableViewCell.swift */; };
 		709C4ED126052DD7005B78D4 /* DataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709C4ECF26052DD7005B78D4 /* DataTableViewCell.xib */; };
 		709C4ED62605301A005B78D4 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4ED52605301A005B78D4 /* DataViewController.swift */; };
+		70EE962C266A98FA003FF6C9 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 70EE962B266A98FA003FF6C9 /* video.mp4 */; };
+		70EE962D266A98FA003FF6C9 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 70EE962B266A98FA003FF6C9 /* video.mp4 */; };
+		70EE962E266A98FA003FF6C9 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 70EE962B266A98FA003FF6C9 /* video.mp4 */; };
+		70EE9636266A9F16003FF6C9 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE9635266A9F16003FF6C9 /* VideoViewController.swift */; };
+		70EE9637266A9F16003FF6C9 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE9635266A9F16003FF6C9 /* VideoViewController.swift */; };
+		70EE9638266A9F16003FF6C9 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE9635266A9F16003FF6C9 /* VideoViewController.swift */; };
+		70FCCA82265BE8EE00D711F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4E78260503AB005B78D4 /* AppDelegate.swift */; };
+		70FCCA83265BE8EE00D711F7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7076453A2605C6190000B52A /* TabBarViewController.swift */; };
+		70FCCA84265BE8EE00D711F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4E7A260503AB005B78D4 /* SceneDelegate.swift */; };
+		70FCCA8E265BE8FD00D711F7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7076453A2605C6190000B52A /* TabBarViewController.swift */; };
+		70FCCA8F265BE8FD00D711F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4E7C260503AB005B78D4 /* ViewController.swift */; };
+		70FCCA90265BE8FD00D711F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4E78260503AB005B78D4 /* AppDelegate.swift */; };
+		70FCCA91265BE8FD00D711F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4E7A260503AB005B78D4 /* SceneDelegate.swift */; };
+		70FCCA95265BE8FE00D711F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4E7C260503AB005B78D4 /* ViewController.swift */; };
+		70FCCA96265BE92100D711F7 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4EBA26051DFA005B78D4 /* ScheduleViewController.swift */; };
+		70FCCA97265BE92100D711F7 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4ECE26052DD7005B78D4 /* DataTableViewCell.swift */; };
+		70FCCA98265BE92100D711F7 /* AlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709C4EAC26050ACF005B78D4 /* AlertTableViewCell.xib */; };
+		70FCCA99265BE92100D711F7 /* DataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709C4ECF26052DD7005B78D4 /* DataTableViewCell.xib */; };
+		70FCCA9A265BE92100D711F7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4EB226050CA2005B78D4 /* HomeViewController.swift */; };
+		70FCCA9B265BE92100D711F7 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4EC9260521C7005B78D4 /* LogViewController.swift */; };
+		70FCCA9C265BE92100D711F7 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4ED52605301A005B78D4 /* DataViewController.swift */; };
+		70FCCA9D265BE92100D711F7 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7076453F2605D1970000B52A /* AuthViewController.swift */; };
+		70FCCA9E265BE92100D711F7 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7076454926060C9F0000B52A /* InitViewController.swift */; };
+		70FCCA9F265BE92100D711F7 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707645442605FEAF0000B52A /* AdminViewController.swift */; };
+		70FCCAA0265BE92100D711F7 /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4EAB26050ACF005B78D4 /* AlertTableViewCell.swift */; };
+		70FCCAA4265BE92200D711F7 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4EBA26051DFA005B78D4 /* ScheduleViewController.swift */; };
+		70FCCAA5265BE92200D711F7 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4ECE26052DD7005B78D4 /* DataTableViewCell.swift */; };
+		70FCCAA6265BE92200D711F7 /* AlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709C4EAC26050ACF005B78D4 /* AlertTableViewCell.xib */; };
+		70FCCAA7265BE92200D711F7 /* DataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709C4ECF26052DD7005B78D4 /* DataTableViewCell.xib */; };
+		70FCCAA8265BE92200D711F7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4EB226050CA2005B78D4 /* HomeViewController.swift */; };
+		70FCCAA9265BE92200D711F7 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4EC9260521C7005B78D4 /* LogViewController.swift */; };
+		70FCCAAA265BE92200D711F7 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4ED52605301A005B78D4 /* DataViewController.swift */; };
+		70FCCAAB265BE92200D711F7 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7076453F2605D1970000B52A /* AuthViewController.swift */; };
+		70FCCAAC265BE92200D711F7 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7076454926060C9F0000B52A /* InitViewController.swift */; };
+		70FCCAAD265BE92200D711F7 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707645442605FEAF0000B52A /* AdminViewController.swift */; };
+		70FCCAAE265BE92200D711F7 /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C4EAB26050ACF005B78D4 /* AlertTableViewCell.swift */; };
 		96DA8E11DA51C3223BD45020 /* Pods_Crowd_Monitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97209E56536A5A51D20B0F5 /* Pods_Crowd_Monitor.framework */; };
 		ABD85212EABE6690F2065028 /* Pods_Crowd_MonitorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCF83906F80C86ABCCCBF52 /* Pods_Crowd_MonitorTests.framework */; };
 /* End PBXBuildFile section */
@@ -77,6 +113,8 @@
 		709C4ECE26052DD7005B78D4 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		709C4ECF26052DD7005B78D4 /* DataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataTableViewCell.xib; sourceTree = "<group>"; };
 		709C4ED52605301A005B78D4 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		70EE962B266A98FA003FF6C9 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		70EE9635266A9F16003FF6C9 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		7A9576A3A6D048317DF5CE06 /* Pods_Crowd_Monitor_Crowd_MonitorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crowd_Monitor_Crowd_MonitorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B4570FF2728E1F87CBB29B1 /* Pods-Crowd Monitor-Crowd MonitorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crowd Monitor-Crowd MonitorUITests.release.xcconfig"; path = "Target Support Files/Pods-Crowd Monitor-Crowd MonitorUITests/Pods-Crowd Monitor-Crowd MonitorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8BCF83906F80C86ABCCCBF52 /* Pods_Crowd_MonitorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crowd_MonitorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +191,7 @@
 		709C4E77260503AB005B78D4 /* Crowd Monitor */ = {
 			isa = PBXGroup;
 			children = (
+				70EE962B266A98FA003FF6C9 /* video.mp4 */,
 				709C4E78260503AB005B78D4 /* AppDelegate.swift */,
 				7076453A2605C6190000B52A /* TabBarViewController.swift */,
 				709C4E7A260503AB005B78D4 /* SceneDelegate.swift */,
@@ -172,6 +211,7 @@
 				7076453F2605D1970000B52A /* AuthViewController.swift */,
 				707645442605FEAF0000B52A /* AdminViewController.swift */,
 				7076454926060C9F0000B52A /* InitViewController.swift */,
+				70EE9635266A9F16003FF6C9 /* VideoViewController.swift */,
 			);
 			path = "Crowd Monitor";
 			sourceTree = "<group>";
@@ -313,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				709C4ED126052DD7005B78D4 /* DataTableViewCell.xib in Resources */,
+				70EE962C266A98FA003FF6C9 /* video.mp4 in Resources */,
 				709C4E85260503B1005B78D4 /* LaunchScreen.storyboard in Resources */,
 				709C4E82260503B1005B78D4 /* Assets.xcassets in Resources */,
 				709C4EAE26050ACF005B78D4 /* AlertTableViewCell.xib in Resources */,
@@ -324,6 +365,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70FCCA98265BE92100D711F7 /* AlertTableViewCell.xib in Resources */,
+				70EE962D266A98FA003FF6C9 /* video.mp4 in Resources */,
+				70FCCA99265BE92100D711F7 /* DataTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +375,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70FCCAA6265BE92200D711F7 /* AlertTableViewCell.xib in Resources */,
+				70EE962E266A98FA003FF6C9 /* video.mp4 in Resources */,
+				70FCCAA7265BE92200D711F7 /* DataTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +499,7 @@
 				7076454A26060C9F0000B52A /* InitViewController.swift in Sources */,
 				709C4E79260503AB005B78D4 /* AppDelegate.swift in Sources */,
 				709C4EBB26051DFA005B78D4 /* ScheduleViewController.swift in Sources */,
+				70EE9636266A9F16003FF6C9 /* VideoViewController.swift in Sources */,
 				709C4EAD26050ACF005B78D4 /* AlertTableViewCell.swift in Sources */,
 				709C4ECA260521C7005B78D4 /* LogViewController.swift in Sources */,
 				709C4E7B260503AB005B78D4 /* SceneDelegate.swift in Sources */,
@@ -464,7 +512,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70FCCA9D265BE92100D711F7 /* AuthViewController.swift in Sources */,
+				70FCCA95265BE8FE00D711F7 /* ViewController.swift in Sources */,
+				70FCCA9E265BE92100D711F7 /* InitViewController.swift in Sources */,
+				70FCCA82265BE8EE00D711F7 /* AppDelegate.swift in Sources */,
+				70FCCA9C265BE92100D711F7 /* DataViewController.swift in Sources */,
+				70FCCA83265BE8EE00D711F7 /* TabBarViewController.swift in Sources */,
+				70FCCA9B265BE92100D711F7 /* LogViewController.swift in Sources */,
+				70FCCA9A265BE92100D711F7 /* HomeViewController.swift in Sources */,
+				70EE9637266A9F16003FF6C9 /* VideoViewController.swift in Sources */,
+				70FCCA9F265BE92100D711F7 /* AdminViewController.swift in Sources */,
+				70FCCA96265BE92100D711F7 /* ScheduleViewController.swift in Sources */,
+				70FCCAA0265BE92100D711F7 /* AlertTableViewCell.swift in Sources */,
 				709C4E90260503B2005B78D4 /* Crowd_MonitorTests.swift in Sources */,
+				70FCCA97265BE92100D711F7 /* DataTableViewCell.swift in Sources */,
+				70FCCA84265BE8EE00D711F7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +534,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70FCCAAB265BE92200D711F7 /* AuthViewController.swift in Sources */,
+				70FCCA91265BE8FD00D711F7 /* SceneDelegate.swift in Sources */,
+				70FCCAAC265BE92200D711F7 /* InitViewController.swift in Sources */,
+				70FCCA90265BE8FD00D711F7 /* AppDelegate.swift in Sources */,
+				70FCCAAA265BE92200D711F7 /* DataViewController.swift in Sources */,
+				70FCCA8F265BE8FD00D711F7 /* ViewController.swift in Sources */,
+				70FCCAA9265BE92200D711F7 /* LogViewController.swift in Sources */,
+				70FCCAA8265BE92200D711F7 /* HomeViewController.swift in Sources */,
+				70EE9638266A9F16003FF6C9 /* VideoViewController.swift in Sources */,
+				70FCCAAD265BE92200D711F7 /* AdminViewController.swift in Sources */,
+				70FCCAA4265BE92200D711F7 /* ScheduleViewController.swift in Sources */,
+				70FCCAAE265BE92200D711F7 /* AlertTableViewCell.swift in Sources */,
+				70FCCA8E265BE8FD00D711F7 /* TabBarViewController.swift in Sources */,
+				70FCCAA5265BE92200D711F7 /* DataTableViewCell.swift in Sources */,
 				709C4E9B260503B2005B78D4 /* Crowd_MonitorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

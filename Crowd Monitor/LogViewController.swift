@@ -13,15 +13,19 @@ class LogViewController: UIViewController {
     @IBOutlet weak var pieChartView: PieChartView!
     @IBOutlet weak var barChartView: BarChartView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var suffLabel: UILabel!
+    @IBOutlet weak var botView: UIView!
+    @IBOutlet weak var topView: UIView!
     
-    let players = ["10-12pm","12-2pm", "2-4pm", "4-6pm", "6-8pm", "8-10pm"]
-    let goals = [6, 15, 26, 30, 8, 10]
-    let tomgoals = [4,10,13,22,19,5]
+    let points = ["1s","2s", "3s", "4s", "5s", "6s", "7s", "8s", "9s", "10s", "11s"]
+    let value = [1,1,2,4,4,4,4,3,3,4,4]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        customizePieChart(dataPoints: players, values: goals.map{ Double($0) })
-        customizeBarChart(dataPoints: players, values: goals.map{ Double($0) })
+        customizePieChart(dataPoints: points, values: value.map{ Double($0) })
+        customizeBarChart(dataPoints: points, values: value.map{ Double($0) })
+        suffLabel.isHidden = true
         
     }
     
@@ -29,11 +33,17 @@ class LogViewController: UIViewController {
         switch segmentedControl.selectedSegmentIndex
             {
             case 0:
-                customizePieChart(dataPoints: players, values: goals.map{ Double($0) })
-                customizeBarChart(dataPoints: players, values: goals.map{ Double($0) })
+                topView.isHidden = false
+                botView.isHidden = false
+                suffLabel.isHidden = true
+                customizePieChart(dataPoints: points, values: value.map{ Double($0) })
+                customizeBarChart(dataPoints: points, values: value.map{ Double($0) })
             case 1:
-                customizePieChart(dataPoints: players, values: tomgoals.map{ Double($0) })
-                customizeBarChart(dataPoints: players, values: tomgoals.map{ Double($0) })
+                //customizePieChart(dataPoints: players, values: tomgoals.map{ Double($0) })
+                //customizeBarChart(dataPoints: players, values: tomgoals.map{ Double($0) })
+                topView.isHidden = true
+                botView.isHidden = true
+                suffLabel.isHidden = false
             default:
                 break
             }
@@ -72,7 +82,6 @@ class LogViewController: UIViewController {
     }
     
     @IBAction func logOutPressed(_ sender: Any) {
-        print("Hiii")
         navigationController?.popToRootViewController(animated: true)
     }
     

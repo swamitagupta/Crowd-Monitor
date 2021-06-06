@@ -11,8 +11,8 @@ class DataViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let players = ["10-12pm","12-2pm", "2-4pm", "4-6pm", "6-8pm", "8-10pm"]
-    let goals = ["6", "15", "26", "30", "8", "10"]
+    let points = ["1s","2s", "3s", "4s", "5s", "6s", "7s", "8s", "9s", "10s", "11s"]
+    let value = [1,1,2,4,4,4,4,3,3,4,4]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,13 +32,13 @@ class DataViewController: UIViewController {
 
 extension DataViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return players.count
+        return points.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dataCell") as! DataTableViewCell
-        cell.countLabel.text = goals[indexPath.row]
-        cell.timeLabel.text = players[indexPath.row]
+        cell.countLabel.text = "\(value[indexPath.row])"
+        cell.timeLabel.text = points[indexPath.row]
         return cell
     }
 }
