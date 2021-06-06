@@ -64,9 +64,10 @@ class AuthViewController: UIViewController {
                 self.messageLabel.alpha = 0
             }
         }
-        else if textField.text == "abc123" && nameTextField.text == "Yash"{
+        else if textField.text == "abc123" && nameTextField.text == "Swams"{
             performSegue(withIdentifier: "authToTab", sender: self)
         }
+        
         else {
             messageLabel.alpha = 1
             messageLabel.text = "❌ Invalid Code!"
